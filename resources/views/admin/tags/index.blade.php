@@ -3,8 +3,10 @@
 @section('title', 'Blog')
 
 @section('content_header')
-    <a class="btn btn-secondary btn-sm float-right" href="{{route('admin.categories.create')}}">Crear Nueva Categoria</a>
-    <h1>Lista de categorias</h1>
+
+    <a class="btn btn-secondary btn-sm float-right" href="{{route('admin.tags.create')}}">Crear Nueva Etiqueta</a>
+    <h1>Mostrar Listado de Etiqueta</h1>
+    
 @stop
 
 @section('content')
@@ -25,34 +27,33 @@
                         <th colspan='2'></th>
                     </tr>
                 </thead>
-
                 <tbody>
-                    @foreach ($categories as $category)
+                    @foreach ($tags as $tag)
                         <tr>
-                            <td>{{$category->id}}</td>
-                            <td>{{$category->name}}</td>
+                            <td>{{$tag->id}}</td>
+                            <td>{{$tag->name}}</td>
                             <td width='10px'>
-                                <a class="btn btn-primary btn-sm" href="{{route('admin.categories.edit',$category)}}">Editar</a>
+                            <a  class = 'btn btn-primary btn-sm' href="{{route('admin.tags.edit',$tag)}}">Editar</a>
                             </td>
                             <td width='10px'>
-                                <form action="{{route('admin.categories.destroy',$category)}}" method="POST">
+                                <form action="{{route('admin.tags.destroy',$tag)}}" method="POST">
                                     @csrf
                                     @method('delete')
-                                    <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                    <button class = 'btn btn-danger btn-sm'  type="submit">Eliminar</button>
                                 </form>
                             </td>
                         </tr>
                     @endforeach
+
                 </tbody>
+
             </table>
+
         </div>
+
+
     </div>
+
+
 @stop
 
-@section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
-@stop
-
-@section('js')
-    <script> console.log('Hi!'); </script>
-@stop

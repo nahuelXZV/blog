@@ -3,13 +3,11 @@
 @section('title', 'Blog')
 
 @section('content_header')
-    <h1>Blog</h1>
+    <h1>Mostrar Etiqueta</h1>
 @stop
 
 @section('content')
-    <p class="text-3xl">Bienvenido al Panel de Control Del blog</p>
-
-
+    <p>Welcome to this beautiful admin panel.</p>
 @stop
 
 @section('css')

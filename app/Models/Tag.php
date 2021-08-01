@@ -9,6 +9,7 @@ class Tag extends Model
 {
     use HasFactory;
     //relacion muchos a muchos
+    protected $fillable = ['name','slug','color'];
 
     public function getRouteKeyName()
     {

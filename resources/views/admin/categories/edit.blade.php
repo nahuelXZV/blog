@@ -18,25 +18,8 @@
         <div class="card-body">
 
             {!! Form::model($category,['route' => ['admin.categories.update',$category], 'method' => 'put']) !!}
-                <div class="form-group">
-                    {!! Form::label('name', 'Nombre') !!}
-                    {!! Form::text('name', null, ['class' => 'from-control', 'placeholder' => 'Ingrese el nombre de la categoria']) !!}
-                    
-                    @error('name')
-                        <span class="text-danger">{{$message}}</span>
-                    @enderror
-
-                </div>
-
-                <div class="form-group">
-                    {!! Form::label('slug', 'Slug') !!}
-                    {!! Form::text('slug', null, ['class' => 'from-control', 'placeholder' => 'Ingrese el slug de la categoria','readonly']) !!}
-                
-                    @error('slug')
-                    <span class="text-danger">{{$message}}</span>
-                    @enderror
-
-                </div>
+               
+                @include('admin.categories.partials.form')
 
                 {!! Form::submit('Actualizar Categoria', ['class' => 'btn btn-primary']) !!}
             {!! Form::close() !!}

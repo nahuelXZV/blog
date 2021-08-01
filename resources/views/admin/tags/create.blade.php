@@ -3,23 +3,26 @@
 @section('title', 'Blog')
 
 @section('content_header')
-    <h1>Crear nueva categoria</h1>
+    <h1>Crear Etiqueta</h1>
 @stop
 
 @section('content')
-    <div class="card">
-        <div class="card-body">
+<div class="card">
+    <div class="card-body">
 
-            {!! Form::open(['route' => 'admin.categories.store']) !!}
+        {!! Form::open(['route' => 'admin.tags.store']) !!}
+            
+            @include('admin.tags.partials.from')
 
-                @include('admin.categories.partials.form')
-                
-                {!! Form::submit('Crear Categoria', ['class' => 'btn btn-primary']) !!}
-            {!! Form::close() !!}
+            {!! Form::submit('Crear Etiqueta', ['class' => 'btn btn-primary']) !!}
+        {!! Form::close() !!}
 
-        </div>
     </div>
+</div>
+@stop
 
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
 
 @section('js')

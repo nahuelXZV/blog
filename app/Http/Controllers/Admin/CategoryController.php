@@ -85,7 +85,7 @@ class CategoryController extends Controller
         ]);
 
         $category->update($request->all());
-        return redirect()->route('admin.categories.edit',$category)->with('info','La categoria se actualizo con exito');
+        return redirect()->route('admin.categories.index',$category)->with('info','La categoria se actualizo con exito');
     }
 
     /**
