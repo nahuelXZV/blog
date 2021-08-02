@@ -1,8 +1,7 @@
 @props(['post'])
 
 <article class="mb-4 bg-white shadow-lg rounded-lg overflow-hidden">
-    <img class="w-full h-50 object-cover object-center" src="{{Storage::url($post->image->url)}}" alt="">
-                
+    <img class=" h-35 w-full object-cover object-center" src="{{Storage::url($post->image->url)}}" alt="">
     <div class="px-6 py-6">
 
         <h1 class="font-bold text-xl">
