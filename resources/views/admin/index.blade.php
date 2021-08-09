@@ -3,13 +3,39 @@
 @section('title', 'Blog')
 
 @section('content_header')
-    <h1>Blog</h1>
 @stop
 
 @section('content')
-    <p class="text-3xl">Bienvenido al Panel de Control Del blog</p>
 
-
+    <div>
+        <div class="w-full h-80 bg-cover bg-center"  style="background-image: url(https://cdn.pixabay.com/photo/2017/04/25/22/28/despaired-2261021_960_720.jpg)">
+            <br>
+            <br>
+            <h1 class="text-4xl text-white leading-8 font-bold mt-2"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bienvenido XD</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <div>
+    </div>
+    
 @stop
 
 @section('css')
