@@ -46,6 +46,7 @@ class PostController extends Controller
                 'url' => $url
             ]);
         }
+        
         if ($request->tags) {
             $post->tags()->attach($request->tags);
         }

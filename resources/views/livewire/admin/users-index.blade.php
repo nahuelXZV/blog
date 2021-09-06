@@ -5,6 +5,7 @@
             <input wire:model = 'search' class="form-control" placeholder="Ingrese el nombre o correo de un usuario">
         </div>
 
+        
         @if($users->count())
         <div class="card-body">
             <table class="table table-striped">
