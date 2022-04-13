@@ -14,7 +14,7 @@
             <strong>{{session('info')}}</strong>
         </div>
     @endif
-    @livewire('admin.posts-index')
+    @include('admin.categories.partials.form')
     
 @stop
 

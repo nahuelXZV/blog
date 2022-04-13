@@ -15,7 +15,7 @@
             <strong>{{session('info')}}</strong>
         </div>
     @endif
-
+ 
     <div class="card-body">
         {!! Form::model($role,['route'=> ['admin.roles.update',$role], 'method' => 'put']) !!}
 

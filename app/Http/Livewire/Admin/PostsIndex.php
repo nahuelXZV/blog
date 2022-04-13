@@ -8,7 +8,7 @@ use  Livewire\WithPagination;
 
 class PostsIndex extends Component
 {
-    use WithPagination;
+    use WithPagination; 
 
     protected $paginationTheme = 'bootstrap';
 

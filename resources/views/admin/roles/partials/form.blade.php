@@ -15,5 +15,5 @@
             {{$permission->description}}
         </label>
     </div>
-    
+     
 @endforeach
